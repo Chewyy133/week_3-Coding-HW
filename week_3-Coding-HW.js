@@ -56,4 +56,57 @@ console.log(names[0]);
 
 //5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 
+let nameLengths = names.map(function(element) {
+    return element.length;
+});
+console.log(nameLengths);
+
+//6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+
+let sum = 0
+
+for (let i = 0; i < nameLengths.length; i++) {
+    sum += nameLengths[i];
+}
+
+console.log(sum);
+
+//7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times.
+
+function repeat(word, n)
+{
+    let s1 = word
+
+    for (let i = 1; i < n; i++)
+    word += s1;
+    
+    return word;
+}
+
+let word = "Can";
+let n = 4; 
+console.log(repeat(word, n));
+
+//8.	Write a function that takes two parameters, firstName and lastName, and returns a full name 
+
+function createFullName(firstName, lastName) {
+    return firstName+ ' ' + lastName;
+}
+console.log(createFullName('Jesus', 'Morales'));
+
+//9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+    let array1 = [21, 15, 85, 2] 
+    let add = 0
+    for (let i = 0; i < array1.length; i++){
+        add += array1[i];
+    }
+    console.log(add);
+
+function statement(add){
+    if (add >= 100) {
+        return true
+    }
+    return '' ;
+}
+console.log(statement(add));
 
