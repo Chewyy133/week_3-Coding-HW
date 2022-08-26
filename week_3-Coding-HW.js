@@ -106,7 +106,54 @@ function statement(add){
     if (add >= 100) {
         return true
     }
-    return '' ;
+    return 'Error' ;
 }
 console.log(statement(add));
+
+//10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
+
+function arrayAvg(array1) {
+    var i = 0; sum = 0;
+    while(i < array1.length) {
+        sum = sum + array1[i++]
+    }
+    return sum / array1.length;
+}
+console.log(arrayAvg(array1));
+
+//11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+let array2 = [1, 2, 3, 4]
+
+function arrayAverage(array2){
+    var i = 0; add = 0;
+    while (i < array2.length) {
+        add = add + array2[i++]
+    }
+    return add / array2.length;
+}
+console.log(arrayAverage(array2));
+
+function averageOfArrays(array1, array2) {
+    if (array1 > array2) {
+        return true
+    }
+    return 'Error';
+}
+console.log(averageOfArrays(array1, array2));
+
+//12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+let a = 10.50
+let isHotOutside = false
+let moneyInPocket = 12
+
+function willBuyDrink(isHotOutside,moneyInPocket) {
+    if (isHotOutside = true && moneyInPocket > a) {
+        return true
+    }
+    return 'Cannot buy a drink';
+}
+console.log(willBuyDrink(isHotOutside, moneyInPocket));
+
+//13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
