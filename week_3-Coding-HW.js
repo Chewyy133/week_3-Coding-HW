@@ -143,12 +143,12 @@ function averageOfArrays(array1, array2) {
 console.log(averageOfArrays(array1, array2));
 
 //12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
-let a = 10.50
-let isHotOutside = false
-let moneyInPocket = 12
+const a = 10.50
+var isHotOutside = true
+var moneyInPocket = 12
 
 function willBuyDrink(isHotOutside,moneyInPocket) {
-    if (isHotOutside = true && moneyInPocket > a) {
+    if (isHotOutside === true && moneyInPocket >= a) {
         return true
     }
     return 'Cannot buy a drink';
@@ -156,4 +156,18 @@ function willBuyDrink(isHotOutside,moneyInPocket) {
 console.log(willBuyDrink(isHotOutside, moneyInPocket));
 
 //13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+let lunchBudget = 15
+let lunch = 10
+
+function canBuyLunch(lunchBudget) {
+    if (lunchBudget >= lunch) {
+        return 'I can buy lunch';
+    }
+    return "Get something else for lunch";
+}
+console.log (canBuyLunch(lunchBudget));
+
+// This function checks if the lunch you want to buy is within your budget.
+// I wrote this function because mostly everyone for whatever reason has to budget their meals throughout the day so they won't overspend on fast food.
+
 
